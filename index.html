@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Estate — Luxury Real Estate & Premium Properties</title>
+  <meta name="description" content="Discover exceptional luxury homes, residential plots, rental villas, and commercial properties with Prime Estate. Buy, sell, and rent with confidence.">
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. Top Bar
+       ========================================================================= -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-contact">
+        <span class="topbar-item">
+          <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+          +1 (800) 555-0199 <span class="contact-placeholder-tag">Placeholder</span>
+        </span>
+        <span class="topbar-item">
+          <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+          inquiries@primeestatedemo.com <span class="contact-placeholder-tag">Placeholder</span>
+        </span>
+      </div>
+      <div class="topbar-right">
+        <span class="topbar-hours">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20" style="color:var(--gold-400);"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
+          Mon – Sat: 9:00 AM – 7:00 PM
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. Header & Sticky Navigation
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Custom Real Estate Logo -->
+      <a href="index.html" class="logo" aria-label="Prime Estate Home">
+        <div class="logo-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 9 5 9 5 21 19 21 19 9 22 9 12 2"></polygon>
+            <polyline points="9 21 9 12 15 12 15 21"></polyline>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">Prime <span>Estate</span></span>
+          <span class="logo-subtitle">Luxury Properties</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="index.html#featured-listings" class="btn btn-primary btn-sm btn-explore-mobile" style="margin-top:10px; width:100%; display:none;">Explore Properties</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <a href="#featured-listings" class="btn btn-primary btn-sm btn-explore-desktop">Explore Properties</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       3. Home Page — Animated Hero Section
+       ========================================================================= -->
+  <section class="hero" id="hero">
+    <!-- Animated Multi-Image Background Slider -->
+    <div class="hero-slider" aria-hidden="true"></div>
+
+    <!-- Dark Gradient Overlay for Supreme Text Contrast -->
+    <div class="hero-overlay"></div>
+
+    <!-- Floating Architectural Geometry & Subtle Parallax Elements -->
+    <div class="hero-architectural-decor" aria-hidden="true">
+      <div class="arch-shape arch-shape-1"></div>
+      <div class="arch-shape arch-shape-2"></div>
+      <div class="arch-grid-line arch-line-v1"></div>
+      <div class="arch-grid-line arch-line-v2"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        Premier Luxury Real Estate Advisory
+      </div>
+
+      <h1 class="hero-title">
+        Find Your <span>Perfect Property</span>
+      </h1>
+
+      <p class="hero-description">
+        Discover exceptional homes, residential plots, and rental properties. Whether you are buying, selling, or renting, we help you find the right property with confidence.
+      </p>
+
+      <!-- Three Prominent Hero Buttons -->
+      <div class="hero-actions">
+        <button class="btn btn-primary" id="hero-btn-buy">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          Buy a Property
+        </button>
+        <button class="btn btn-outline" id="hero-btn-rent">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          Rent a Property
+        </button>
+        <button class="btn btn-secondary" id="hero-btn-sell">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Sell Your Property
+        </button>
+      </div>
+
+      <!-- Slide Indicator Dots -->
+      <div class="hero-slide-indicators"></div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. Property Search Panel
+       ========================================================================= -->
+  <div class="search-panel-wrapper" id="search-section">
+    <div class="container">
+      <div class="search-panel">
+        <!-- Purpose Tabs (Buy, Rent, Sell) -->
+        <div class="search-tabs">
+          <button class="search-tab-btn active" data-purpose="buy">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            Buy Properties
+          </button>
+          <button class="search-tab-btn" data-purpose="rent">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/></svg>
+            Rent Properties
+          </button>
+          <button class="search-tab-btn" data-purpose="sell">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+            Sell / List Property
+          </button>
+        </div>
+
+        <!-- Search Form -->
+        <form id="property-search-form">
+          <div class="search-grid">
+            <!-- Property Type -->
+            <div class="search-field">
+              <label for="search-property-type" class="search-label">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
+                Property Type
+              </label>
+              <select id="search-property-type" class="search-select">
+                <option value="all">All Types (Any)</option>
+                <option value="house">House / Villa</option>
+                <option value="apartment">Modern Apartment</option>
+                <option value="plot">Residential Plot</option>
+                <option value="commercial">Commercial Office</option>
+              </select>
+            </div>
+
+            <!-- Location -->
+            <div class="search-field">
+              <label for="search-location" class="search-label">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+                Location
+              </label>
+              <select id="search-location" class="search-select">
+                <option value="all">All Locations (Any)</option>
+                <option value="Beverly Hills">Beverly Hills / Westside</option>
+                <option value="Manhattan">Manhattan Downtown</option>
+                <option value="Palm Beach">Palm Beach Coast</option>
+                <option value="Silicon Valley">Silicon Valley</option>
+                <option value="Suburban Ridge">Suburban Ridge Estate</option>
+              </select>
+            </div>
+
+            <!-- Min Price -->
+            <div class="search-field">
+              <label for="search-min-price" class="search-label">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.736 6.979C9.208 6.193 9.696 6 10 6c.304 0 .792.193 1.264.979a1 1 0 001.715-1.029C12.279 4.784 11.232 4 10 4s-2.279.784-2.979 1.95c-.285.475-.507 1.002-.67 1.55H6a1 1 0 000 2h.013a9.358 9.358 0 000 1H6a1 1 0 100 2h.351c.163.548.385 1.075.67 1.55C7.721 15.216 8.768 16 10 16s2.279-.784 2.979-1.95a1 1 0 10-1.715-1.029c-.472.786-.96.979-1.264.979-.304 0-.792-.193-1.264-.979a4.265 4.265 0 01-.264-.521H10a1 1 0 100-2H8.351a7.354 7.354 0 010-1H10a1 1 0 100-2H8.472c.07-.183.16-.36.264-.521z" clip-rule="evenodd"/></svg>
+                Min Price
+              </label>
+              <select id="search-min-price" class="search-select">
+                <option value="0">No Minimum</option>
+                <option value="5000">$5,000 / mo</option>
+                <option value="100000">$100,000</option>
+                <option value="500000">$500,000</option>
+                <option value="1000000">$1,000,000</option>
+                <option value="2500000">$2,500,000</option>
+              </select>
+            </div>
+
+            <!-- Max Price -->
+            <div class="search-field">
+              <label for="search-max-price" class="search-label">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"/></svg>
+                Max Price
+              </label>
+              <select id="search-max-price" class="search-select">
+                <option value="999999999">No Maximum</option>
+                <option value="15000">$15,000 / mo</option>
+                <option value="1000000">$1,000,000</option>
+                <option value="2500000">$2,500,000</option>
+                <option value="5000000">$5,000,000</option>
+                <option value="10000000">$10,000,000+</option>
+              </select>
+            </div>
+
+            <!-- Search Properties Button -->
+            <button type="submit" class="btn btn-primary search-submit-btn">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              Search Properties
+            </button>
+          </div>
+        </form>
+
+        <div class="search-status-bar">
+          <span id="search-results-count">Showing 8 of 8 available properties</span>
+          <span class="search-reset-btn" id="search-reset-btn">Reset All Filters</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       5. Featured Properties Section
+       ========================================================================= -->
+  <section class="section" id="featured-listings">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Exclusive Portfolio</span>
+        <h2 class="section-title">Featured Properties</h2>
+        <p class="section-desc">
+          Explore our handpicked collection of luxury houses, modern apartments, premium plots, rental villas, and commercial real estate.
+        </p>
+      </div>
+
+      <!-- Category Filter Pills Bar -->
+      <div class="properties-filter-bar">
+        <button class="filter-pill active" data-category="all">All Properties</button>
+        <button class="filter-pill" data-category="sale">For Sale</button>
+        <button class="filter-pill" data-category="rent">For Rent</button>
+        <button class="filter-pill" data-category="house">Houses & Villas</button>
+        <button class="filter-pill" data-category="apartment">Apartments</button>
+        <button class="filter-pill" data-category="plot">Residential Plots</button>
+        <button class="filter-pill" data-category="commercial">Commercial</button>
+      </div>
+
+      <!-- Property Grid (Populated dynamically from data.js) -->
+      <div class="properties-grid" id="properties-grid">
+        <!-- Javascript dynamically injects sample property cards here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. Why Choose Us Section
+       ========================================================================= -->
+  <section class="section section-light" id="why-choose-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">The Prime Estate Distinction</span>
+        <h2 class="section-title">Why Choose Us</h2>
+        <p class="section-desc">
+          Setting new benchmarks in luxury property transactions with certified title transparency, seasoned guidance, and personalized care.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- 1. Verified Property Listings -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="feature-title">Verified Property Listings</h3>
+          <p class="feature-desc">
+            Every house, plot, and commercial asset undergoes 100% legal title verification, physical zoning inspections, and registry clearance before listing.
+          </p>
+        </div>
+
+        <!-- 2. Professional Guidance -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </div>
+          <h3 class="feature-title">Professional Guidance</h3>
+          <p class="feature-desc">
+            Benefit from seasoned brokers with over 18 years of prime market insight, offering bespoke advisory for acquisitions, staging, and high-yield investments.
+          </p>
+        </div>
+
+        <!-- 3. Transparent Deals -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          </div>
+          <h3 class="feature-title">Transparent Deals</h3>
+          <p class="feature-desc">
+            Complete transaction clarity with zero hidden brokerage clauses, structured escrow settlement paths, and detailed comparative market valuation reports.
+          </p>
+        </div>
+
+        <!-- 4. Trusted Customer Support -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </div>
+          <h3 class="feature-title">Trusted Customer Support</h3>
+          <p class="feature-desc">
+            Dedicated private client concierges available 7 days a week for property viewings, relocation logistics, deed transfers, and post-purchase management.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. Our Services Preview Section
+       ========================================================================= -->
+  <section class="section section-dark" id="services-preview">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">What We Offer</span>
+        <h2 class="section-title">Our Real Estate Services</h2>
+        <p class="section-desc">
+          Tailored property solutions structured to maximize convenience, investment growth, and long-term asset value.
+        </p>
+      </div>
+
+      <div class="services-preview-grid">
+        <!-- 1. Property Buying -->
+        <div class="service-preview-card">
+          <div class="service-preview-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Property Buying" class="service-preview-img" loading="lazy">
+          </div>
+          <div class="service-preview-body">
+            <h3 class="service-preview-title">Property Buying</h3>
+            <p class="service-preview-desc">
+              Discover curated luxury residences, custom villas, and prime plots with personalized acquisition advisory and closing support.
+            </p>
+            <a href="services.html#buying" class="service-preview-link">
+              Explore Buying
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Property Selling -->
+        <div class="service-preview-card">
+          <div class="service-preview-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Property Selling" class="service-preview-img" loading="lazy">
+          </div>
+          <div class="service-preview-body">
+            <h3 class="service-preview-title">Property Selling</h3>
+            <p class="service-preview-desc">
+              Market your property with architectural 4K visual tours, targeted high-net-worth outreach, and competitive valuation staging.
+            </p>
+            <a href="services.html#selling" class="service-preview-link">
+              Explore Selling
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Property Rentals -->
+        <div class="service-preview-card">
+          <div class="service-preview-img-wrap">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" alt="Property Rentals" class="service-preview-img" loading="lazy">
+          </div>
+          <div class="service-preview-body">
+            <h3 class="service-preview-title">Property Rentals</h3>
+            <p class="service-preview-desc">
+              Connecting qualified tenants with executive penthouses, furnished family estates, and luxury waterfront retreats.
+            </p>
+            <a href="services.html#rentals" class="service-preview-link">
+              Explore Rentals
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. Property Investment -->
+        <div class="service-preview-card">
+          <div class="service-preview-img-wrap">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Property Investment" class="service-preview-img" loading="lazy">
+          </div>
+          <div class="service-preview-body">
+            <h3 class="service-preview-title">Property Investment</h3>
+            <p class="service-preview-desc">
+              Strategic capital allocation in high-yield commercial hubs, emerging land developments, and passive rental portfolios.
+            </p>
+            <a href="services.html#investment" class="service-preview-link">
+              Explore Investment
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. How It Works Section
+       ========================================================================= -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Seamless Transaction Flow</span>
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-desc">
+          Four straightforward, professionally guided steps from initial property discovery to final keys handover.
+        </p>
+      </div>
+
+      <div class="how-it-works-grid">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <h3 class="step-title">Search for a Property</h3>
+          <p class="step-desc">
+            Filter our exclusive database by location, price, property type, or investment purpose to pinpoint your ideal match.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <h3 class="step-title">Explore Available Options</h3>
+          <p class="step-desc">
+            Review comprehensive architectural specs, zoning records, high-resolution galleries, and projected yield metrics.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <h3 class="step-title">Schedule a Property Visit</h3>
+          <p class="step-desc">
+            Book an escorted private VIP tour with our senior property specialist at a time that seamlessly fits your schedule.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card">
+          <div class="step-number">04</div>
+          <h3 class="step-title">Complete Your Deal</h3>
+          <p class="step-desc">
+            Enjoy full escrow protection, transparent contract structuring, and rapid registry deed transfer with zero stress.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. Testimonials Section
+       ========================================================================= -->
+  <section class="section section-dark" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Client Experiences</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-desc">
+          Hear from proud homeowners, seasoned developers, and institutional investors who place their trust in Prime Estate.
+        </p>
+      </div>
+
+      <div class="testimonials-slider-container">
+        <!-- Injected via home.js -->
+        <div id="testimonials-slider-content"></div>
+
+        <div class="testimonial-nav">
+          <button class="testimonial-nav-btn" id="testimonial-prev-btn" aria-label="Previous Testimonial">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button class="testimonial-nav-btn" id="testimonial-next-btn" aria-label="Next Testimonial">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. Call to Action Banner
+       ========================================================================= -->
+  <section class="section" style="padding-bottom: 60px;">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-banner-content">
+          <span class="section-subtitle" style="color:var(--gold-300);">Start Today</span>
+          <h2 class="cta-title">Ready to Find Your Dream Property?</h2>
+          <p class="cta-desc">
+            Let our real estate experts help you discover the right property for your needs, negotiate optimum terms, and guide your acquisition from start to finish.
+          </p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              Contact Our Team
+            </a>
+            <a href="about.html" class="btn btn-outline btn-lg">Learn More About Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. Unified Footer
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-col-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 9 5 9 5 21 19 21 19 9 22 9 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title">Prime <span>Estate</span></span>
+              <span class="logo-subtitle">Luxury Properties</span>
+            </div>
+          </a>
+          <p>
+            Prime Estate is a premier luxury real estate advisory delivering verified residences, strategic commercial assets, and master-planned plots with unmatched transparency and discretion.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="LinkedIn"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="#" class="social-btn" aria-label="Facebook"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg></a>
+            <a href="#" class="social-btn" aria-label="X / Twitter"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home Page</a></li>
+            <li><a href="about.html" class="footer-link">About Prime Estate</a></li>
+            <li><a href="services.html" class="footer-link">Our Services</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            <li><a href="index.html#featured-listings" class="footer-link">Featured Properties</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Property Categories -->
+        <div>
+          <h4 class="footer-title">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#search-section" class="footer-link">Luxury Houses</a></li>
+            <li><a href="index.html#search-section" class="footer-link">Modern Apartments</a></li>
+            <li><a href="index.html#search-section" class="footer-link">Residential Plots</a></li>
+            <li><a href="index.html#search-section" class="footer-link">Executive Rentals</a></li>
+            <li><a href="index.html#search-section" class="footer-link">Commercial Real Estate</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter & Contact Placeholders -->
+        <div class="footer-col-newsletter">
+          <h4 class="footer-title">Private Portfolio</h4>
+          <p>
+            Subscribe to receive our confidential monthly catalog of off-market luxury estates and investment reports.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your email address..." required>
+            <button type="submit" class="newsletter-submit">Subscribe</button>
+          </form>
+          <div style="margin-top:20px; font-size:0.85rem; color:var(--gray-400);">
+            <div style="margin-bottom:4px;">📍 742 Evergreen Blvd, Suite 400 (Demo Placeholder)</div>
+            <div>📞 +1 (800) 555-0199 (Demo Placeholder)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Prime Estate Properties LLC. All rights reserved. Professional Real Estate Platform.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Fair Housing Act</a>
+          <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       12. Property Details Modal (Interactive Pop-up)
+       ========================================================================= -->
+  <div class="modal-overlay" id="property-details-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Close dialog">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+      <div class="modal-body" id="property-modal-content">
+        <!-- Dynamically populated by home.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

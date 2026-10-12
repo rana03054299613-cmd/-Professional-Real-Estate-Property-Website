@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Prime Estate Luxury Properties</title>
+  <meta name="description" content="Explore Prime Estate's comprehensive real estate services: property buying, selling, luxury rentals, plot transactions, commercial properties, and investment advisory.">
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. Top Bar
+       ========================================================================= -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-contact">
+        <span class="topbar-item">
+          <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+          +1 (800) 555-0199 <span class="contact-placeholder-tag">Placeholder</span>
+        </span>
+        <span class="topbar-item">
+          <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+          inquiries@primeestatedemo.com <span class="contact-placeholder-tag">Placeholder</span>
+        </span>
+      </div>
+      <div class="topbar-right">
+        <span class="topbar-hours">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20" style="color:var(--gold-400);"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
+          Mon – Sat: 9:00 AM – 7:00 PM
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. Header & Sticky Navigation
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo" aria-label="Prime Estate Home">
+        <div class="logo-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <polygon points="12 2 2 9 5 9 5 21 19 21 19 9 22 9 12 2"></polygon>
+            <polyline points="9 21 9 12 15 12 15 21"></polyline>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">Prime <span>Estate</span></span>
+          <span class="logo-subtitle">Luxury Properties</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html#featured-listings" class="btn btn-primary btn-sm btn-explore-desktop">Explore Properties</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       3. Page Banner
+       ========================================================================= -->
+  <section class="page-banner">
+    <div class="page-banner-bg" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=85');"></div>
+    <div class="page-banner-overlay"></div>
+    <div class="container page-banner-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Services</span>
+      </div>
+      <h1 class="page-banner-title">Our Real Estate Services</h1>
+      <p class="page-banner-desc">
+        Comprehensive, fiduciary-backed property solutions engineered for residential acquisitions, asset liquidations, high-value land development, and commercial portfolios.
+      </p>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. Detailed Service 1: Property Buying
+       ========================================================================= -->
+  <section class="service-detail-section" id="buying">
+    <div class="container">
+      <div class="service-detail-grid">
+        <div class="service-detail-img-wrap">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Property Buying Service" class="service-detail-img" loading="lazy">
+        </div>
+        <div class="service-detail-content">
+          <span class="service-tag">Acquisition Services</span>
+          <h2 class="service-detail-title">Property Buying Advisory</h2>
+          <p class="service-detail-desc">
+            We help clients discover suitable houses, luxury apartments, pristine plots, and commercial properties that precisely match their lifestyle ambitions and financial criteria. Our private buying service offers access to unlisted off-market trophy properties, rigorous price negotiation, and full closing protection.
+          </p>
+          <div class="service-checklist">
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Personalized Property Sourcing</span>
+            </div>
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Off-Market Pocket Listings</span>
+            </div>
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Comprehensive Title Due Diligence</span>
+            </div>
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Strategic Closing Negotiation</span>
+            </div>
+          </div>
+          <div style="display:flex; gap:16px;">
+            <a href="contact.html?purpose=buy" class="btn btn-primary">Inquire About Buying</a>
+            <a href="index.html#featured-listings" class="btn btn-outline-dark">Browse Properties</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. Detailed Service 2: Property Selling
+       ========================================================================= -->
+  <section class="service-detail-section" id="selling" style="background-color: var(--off-white);">
+    <div class="container">
+      <div class="service-detail-grid reverse">
+        <div class="service-detail-img-wrap">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" alt="Property Selling Service" class="service-detail-img" loading="lazy">
+        </div>
+        <div class="service-detail-content">
+          <span class="service-tag">Listing & Marketing</span>
+          <h2 class="service-detail-title">Property Selling & Representation</h2>
+          <p class="service-detail-desc">
+            We help property owners showcase their luxury properties to qualified local and international buyers. Combining architectural cinema, bespoke digital staging, and direct syndication across premier luxury networks, we consistently secure market-leading sale valuations in minimal turnaround time.
+          </p>
+          <div class="service-checklist">
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>4K Architectural Drone Video</span>
+            </div>
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Pre-Screened Vetted Buyers</span>
+            </div>
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Custom Digital Staging & PR</span>
+            </div>
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Maximum Benchmark Valuations</span>
+            </div>
+          </div>
+          <div style="display:flex; gap:16px;">
+            <a href="contact.html?purpose=sell" class="btn btn-primary">List Your Property</a>
+            <a href="#valuation-tool" class="btn btn-outline-dark">Valuation Estimator</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. Detailed Service 3: Property Rentals
+       ========================================================================= -->
+  <section class="service-detail-section" id="rentals">
+    <div class="container">
+      <div class="service-detail-grid">
+        <div class="service-detail-img-wrap">
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80" alt="Property Rentals Service" class="service-detail-img" loading="lazy">
+        </div>
+        <div class="service-detail-content">
+          <span class="service-tag">Leasing & Tenancy</span>
+          <h2 class="service-detail-title">Luxury Property Rentals</h2>
+          <p class="service-detail-desc">
+            We bridge executive tenants with top-tier rental homes, furnished villas, and downtown penthouses, while assisting property owners with comprehensive tenant screening, background checks, seamless lease drafting, and dedicated landlord asset support.
+          </p>
+          <div class="service-checklist">
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Rigorous Credit & Background Screening</span>
+            </div>
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Fully Furnished Short & Long Term Leases</span>
+            </div>
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Standardized Legal Rental Agreements</span>
+            </div>
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Automated Escrow Rent Disbursement</span>
+            </div>
+          </div>
+          <div style="display:flex; gap:16px;">
+            <a href="contact.html?purpose=rent" class="btn btn-primary">Find a Rental</a>
+            <a href="contact.html?purpose=rent&subject=List%20My%20Rental%20Property" class="btn btn-outline-dark">List Your Rental</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. Detailed Service 4: Plot Buying and Selling
+       ========================================================================= -->
+  <section class="service-detail-section" id="plots" style="background-color: var(--off-white);">
+    <div class="container">
+      <div class="service-detail-grid reverse">
+        <div class="service-detail-img-wrap">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80" alt="Plot Buying and Selling Service" class="service-detail-img" loading="lazy">
+        </div>
+        <div class="service-detail-content">
+          <span class="service-tag">Land Development & Plots</span>
+          <h2 class="service-detail-title">Plot Buying and Selling</h2>
+          <p class="service-detail-desc">
+            We feature prime residential and commercial plots with clear location boundaries, accurate area measurements in Marla, Kanal, Square Feet, and Acres. Whether you seek a custom villa building site in a master-planned community or an expansive commercial development parcel, our soil, zoning, and legal clearance guarantee total peace of mind.
+          </p>
+          <div class="service-checklist">
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Demarcated Corner & Boulevard Plots</span>
+            </div>
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Certified Registry & Mutation Records</span>
+            </div>
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Utility Line Feasibility (Gas/Water/Power)</span>
+            </div>
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Topographic & Soil Suitability Reports</span>
+            </div>
+          </div>
+          <div style="display:flex; gap:16px;">
+            <a href="contact.html?purpose=plot" class="btn btn-primary">Inquire Regarding Plots</a>
+            <a href="index.html#featured-listings" class="btn btn-outline-dark">View Available Plots</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. Detailed Service 5: Commercial Real Estate
+       ========================================================================= -->
+  <section class="service-detail-section" id="commercial">
+    <div class="container">
+      <div class="service-detail-grid">
+        <div class="service-detail-img-wrap">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="Commercial Real Estate Service" class="service-detail-img" loading="lazy">
+        </div>
+        <div class="service-detail-content">
+          <span class="service-tag">Commercial Sector</span>
+          <h2 class="service-detail-title">Commercial Real Estate</h2>
+          <p class="service-detail-desc">
+            We provide strategic real estate options for corporate office headquarters, luxury retail boutiques, flagship commercial buildings, medical suites, and multi-tenant complexes. From leasehold acquisitions to institutional freehold purchases, our team manages complex commercial contracts seamlessly.
+          </p>
+          <div class="service-checklist">
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Grade-A Office Buildings & Suites</span>
+            </div>
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Prime High-Street Retail Outlets</span>
+            </div>
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Triple Net (NNN) Lease Structuring</span>
+            </div>
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Anchor Tenant Sourcing & Leasing</span>
+            </div>
+          </div>
+          <div style="display:flex; gap:16px;">
+            <a href="contact.html?purpose=commercial" class="btn btn-primary">Commercial Consultation</a>
+            <a href="index.html#featured-listings" class="btn btn-outline-dark">View Commercial Listings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. Detailed Service 6: Property Investment Consultation
+       ========================================================================= -->
+  <section class="service-detail-section" id="investment" style="background-color: var(--off-white);">
+    <div class="container">
+      <div class="service-detail-grid reverse">
+        <div class="service-detail-img-wrap">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" alt="Investment Consultation Service" class="service-detail-img" loading="lazy">
+        </div>
+        <div class="service-detail-content">
+          <span class="service-tag">Strategic Wealth Advisory</span>
+          <h2 class="service-detail-title">Property Investment Consultation</h2>
+          <p class="service-detail-desc">
+            We guide private clients and institutional funds through lucrative property investment options, capitalizing on market trends, tax-deferred strategies, and high-capital-appreciation zones. Our quantitative models evaluate capitalization rates, internal rate of return (IRR), and downside protection.
+          </p>
+          <div class="service-checklist">
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Yield & Cash Flow Projections</span>
+            </div>
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Market Cycle & Urban Growth Forecasting</span>
+            </div>
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Portfolio Risk Diversification</span>
+            </div>
+            <div class="checklist-item">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Structured Exit & Resale Timelines</span>
+            </div>
+          </div>
+          <div style="display:flex; gap:16px;">
+            <a href="contact.html?purpose=investment" class="btn btn-primary">Request Advisory Session</a>
+            <a href="#valuation-tool" class="btn btn-outline-dark">Run Valuation Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. Interactive Property Valuation Estimator Tool
+       ========================================================================= -->
+  <section class="section" id="valuation-tool">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Real-Time Estimator</span>
+        <h2 class="section-title">Property Valuation Calculator</h2>
+        <p class="section-desc">
+          Test our interactive estimation tool to calculate benchmark market ranges and rental yields for houses, apartments, plots, and commercial facilities.
+        </p>
+      </div>
+
+      <div class="valuation-box">
+        <form id="valuation-calc-form">
+          <div class="valuation-form-grid">
+            <div class="search-field">
+              <label class="search-label" for="calc-property-type">Property Category</label>
+              <select id="calc-property-type" class="search-select">
+                <option value="house">Luxury House / Villa</option>
+                <option value="apartment">Modern Apartment</option>
+                <option value="plot">Residential Plot</option>
+                <option value="commercial">Commercial Space</option>
+              </select>
+            </div>
+
+            <div class="search-field">
+              <label class="search-label" for="calc-area">Area (Square Feet)</label>
+              <input type="number" id="calc-area" class="search-input" value="3500" min="500" max="50000" step="100">
+            </div>
+
+            <div class="search-field">
+              <label class="search-label" for="calc-location-tier">Location Tier</label>
+              <select id="calc-location-tier" class="search-select">
+                <option value="ultra-prime">Ultra-Prime (Beverly Hills / Manhattan)</option>
+                <option value="prime" selected>Prime Metropolitan Core</option>
+                <option value="suburban">Suburban Growth Corridor</option>
+              </select>
+            </div>
+
+            <div class="search-field">
+              <label class="search-label" for="calc-condition">Structural Condition</label>
+              <select id="calc-condition" class="search-select">
+                <option value="mint" selected>Brand New / Mint Luxury</option>
+                <option value="renovated">Recently Renovated</option>
+                <option value="standard">Standard Solid Condition</option>
+              </select>
+            </div>
+          </div>
+        </form>
+
+        <div class="calc-result-card">
+          <div class="calc-estimate-label">Estimated Market Valuation Range (Sample Benchmark)</div>
+          <div class="calc-estimate-value" id="calc-estimate-result">$1,850,000 — $2,050,000</div>
+          <div id="calc-yield-result" style="font-size:1.05rem; font-weight:600; color:var(--gold-300); margin-bottom:12px;">Projected Annual Yield: 4.8% - 5.6%</div>
+          <p class="calc-estimate-disclaimer">
+            *Demonstration estimate based on current regional comp medians. To obtain an official certified appraiser report for financing, insurance, or listing, speak with our certified valuation department.
+          </p>
+          <div style="margin-top:20px;">
+            <button class="btn btn-primary" id="request-formal-appraisal-btn">Request Formal Certified Appraisal</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. Frequently Asked Questions (FAQ) Accordion
+       ========================================================================= -->
+  <section class="section section-light" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Clarifying Details</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">
+          Common questions regarding property verification, commissions, closing timelines, and plot acquisition.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item active">
+          <button class="faq-trigger" type="button">
+            <span>How does Prime Estate verify property titles and ownership?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content">
+            <p>
+              Every property listed undergoes our proprietary 30-point legal audit. This includes municipal deed registry cross-referencing, encumbrance verification, zoning authority compliance checks, boundary demarcation, and lien search conducted by certified real estate attorneys.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            <span>What are the standard brokerage fees and closing costs?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content">
+            <p>
+              We pride ourselves on complete fee transparency. Typical advisory and brokerage fees are standardized and clearly disclosed in our written representation engagement before any property search or listing campaign begins. There are zero hidden administrative charges or unexpected escrow fees.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            <span>Can foreign nationals and international buyers purchase property with you?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content">
+            <p>
+              Yes. Our dedicated International Client Concierge assists non-resident buyers with foreign exchange compliances, cross-border wire transfers, power of attorney documentation, tax registration, and remote digital closings so you can acquire trophy properties from anywhere in the world.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            <span>How do you protect buyer funds during large plot or estate transactions?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content">
+            <p>
+              All deposits, earnest money, and milestone payments are held in segregated, FDIC-insured escrow accounts managed by licensed fiduciary trust partners. Funds are released strictly upon simultaneous verification of deed transfer and municipal title registration.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            <span>How long does the typical selling process take from listing to closing?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content">
+            <p>
+              Due to our proprietary high-net-worth investor database and cinematic 4K digital staging, our listings receive verified offers in an average of 28 to 45 days, significantly outperforming broader market averages.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. Call to Action Banner
+       ========================================================================= -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-banner-content">
+          <span class="section-subtitle" style="color:var(--gold-300);">Custom Solutions</span>
+          <h2 class="cta-title">Need Personalized Real Estate Advisory?</h2>
+          <p class="cta-desc">
+            Speak directly with our senior real estate consultants to explore bespoke property sourcing, commercial portfolio analysis, or private selling strategies.
+          </p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg">Schedule Free Consultation</a>
+            <a href="index.html#featured-listings" class="btn btn-outline btn-lg">Browse Listings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       13. Unified Footer
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 9 5 9 5 21 19 21 19 9 22 9 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title">Prime <span>Estate</span></span>
+              <span class="logo-subtitle">Luxury Properties</span>
+            </div>
+          </a>
+          <p>
+            Prime Estate is a premier luxury real estate advisory delivering verified residences, strategic commercial assets, and master-planned plots with unmatched transparency and discretion.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="LinkedIn"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="#" class="social-btn" aria-label="Facebook"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home Page</a></li>
+            <li><a href="about.html" class="footer-link">About Prime Estate</a></li>
+            <li><a href="services.html" class="footer-link">Our Services</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            <li><a href="index.html#featured-listings" class="footer-link">Featured Properties</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#search-section" class="footer-link">Luxury Houses</a></li>
+            <li><a href="index.html#search-section" class="footer-link">Modern Apartments</a></li>
+            <li><a href="index.html#search-section" class="footer-link">Residential Plots</a></li>
+            <li><a href="index.html#search-section" class="footer-link">Executive Rentals</a></li>
+            <li><a href="index.html#search-section" class="footer-link">Commercial Real Estate</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-newsletter">
+          <h4 class="footer-title">Private Portfolio</h4>
+          <p>
+            Subscribe to receive our confidential monthly catalog of off-market luxury estates and investment reports.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your email address..." required>
+            <button type="submit" class="newsletter-submit">Subscribe</button>
+          </form>
+          <div style="margin-top:20px; font-size:0.85rem; color:var(--gray-400);">
+            <div style="margin-bottom:4px;">📍 742 Evergreen Blvd, Suite 400 (Demo Placeholder)</div>
+            <div>📞 +1 (800) 555-0199 (Demo Placeholder)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Prime Estate Properties LLC. All rights reserved. Professional Real Estate Platform.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Fair Housing Act</a>
+          <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/services.js"></script>
+</body>
+</html>
